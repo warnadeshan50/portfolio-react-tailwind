@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  /* for sub tittles */
+  /* font-family: "Oswald", sans-serif; */
+
+  /* for description */
+  font-family: "Ropa Sans", sans-serif;
+   
+}
+
+ul li a {
+  color: #ffffff;
+}
+
+
+ul li a:hover {
+  color: #00a8ff;
+}
+
+ul li a.active {
+  color: #00a8ff;
+}
+
+section{
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 11px;
+  width: 95vw;
+  height: 88vh;
+  background-color: #ffffff;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.header{
+  width: fit-content;
+  height: fit-content;
+  font-size: 5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  margin: auto;
+}
+.background{
+  overflow: hidden;
+  width: 95vw;
+  height: 88vh;
+}
+
+.circle{
+  z-index: 77;
+  background-color: #ffffff;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+@keyframes circleHover{
+  to{
+    background-color: #ffffff;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+  }from{
+    background-color: chartreuse;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
+}
+.circle:hover{
+  animation: circleHover 3s;
+}
+.c1{
+  width: 200px;
+  height: 200px;
+  
+}
+.c2{
+  width: 400px;
+  height: 400px;
+}
+.c3{
+  width:600px;
+  height: 600px;
+}
+.c4{
+  width: 800px;
+  height: 800px;
+}
+.c5{
+  width: 1000px;
+  height: 1000px;
+}
+
+.c6{
+  width: 1200px;
+  height: 1200px;
+}
+.c7{
+  width: 1400px;
+  height: 1400px;
+}
+.c8{
+  width: 1600px;
+  height: 1600px;
+}
+.name{
+  font-weight: 900;
+  font-family: none;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  right:0;
+  left: 0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+
+}
+
+.short-dis{
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 1000px;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 40px;
+  font-family: "Oswald", sans-serif;
+}
+@media screen and (max-width: 1000px) {
+  .name{
+    font-size: 7rem;
+
+  }
+  .short-dis {
+    font-size: 1.6rem;
+    width: 800px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .name{
+    font-size: 6rem;
+
+  }
+  .short-dis {
+    width: 700px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .name{
+    font-size: 4rem;
+
+  }
+  .short-dis {
+    width: 500px;
+    font-size: 1.3rem;
+  }
+}
+
+.social-btn{
+  background: #000;
+  margin:25px;
+}
+
+.social-btn-area{
+  position: absolute;
+  width: 330px;
+  right: 0;
+  left: 0;
+  bottom: 80px;
+  margin: auto;
+
+}
+
+/* About */
+
+.about-pic{
+  width: 180px;
+  height: 190px;
+  position: absolute;
+  top:200px;
+  left: 30px;
+  border-width: 5px;
+  padding: 4px;
+}
+
+.about-dis{
+  width: 230px;
+  position: absolute;
+  right:30px;
+  top: 200px;
+  margin: auto;
+}
+
+.skills{
+  width: 400px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: 75px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.skills li{
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  background: cadetblue;
+  flex-wrap: wrap;
+  margin: 5px 10px 5px 10px;
+  flex: 1 1 0%;
+  border-radius: 5px;
+}
+
+.skills-tit{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-weight: 600;
+  right: 0;
+  left: 0;
+  margin: auto;
+  font-size: 1.4rem;
+  bottom: 120px;
+}
+
+@media screen and (min-width: 600px) {
+  .about-dis{
+    width: 300px;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .about-dis{
+    width: 400px;
+    font-size: 1.2rem;
+  }
+  .about-pic{
+    width: 210px;
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .about-dis{
+    width: 400px;
+    font-size: 1.2rem;
+  }
+  .about-pic{
+    width: 260px;
+    height: 270px;
+    left: 50px;
+  }
+  .about-dis{
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .about-dis{
+    width: 500px;
+    font-size: 1.3rem;
+  }
+  .about-pic{
+    width: 260px;
+    height: 270px;
+    left: 50px;
+  }
+  .about-dis{
+    margin-right: 50px;
+  }
+
+  .skills-tit{
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .about-dis{
+    width: 500px;
+    font-size: 1.3rem;
+  }
+  .about-pic{
+    width: 260px;
+    height: 270px;
+    left: 50px;
+  }
+  .about-dis{
+    margin-right: 50px;
+  }
+
+  .skills-tit{
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-dis{
+    width: 550px;
+    font-size: 1.5rem;
+    margin-right: 100px;
+  }
+  .about-pic{
+    width: 260px;
+    height: 270px;
+    left: 150px;
+  }
+
+  .skills-tit{
+    font-size: 1.7rem;
+    bottom: 160px;
+  }
+  .skills{
+    width: 800px;
+    bottom: 100px;
+  }
+  .skills li{
+    font-size: 1.3rem;
+  }
+}
+
+
+@media screen and (min-width: 1300px) {
+  .about-dis{
+    left: 300px;
+  }
+  .about-pic{
+    width: 300px;
+    height: 310px;
+    left: 300px;
+  }
+  .skills-tit{
+    bottom: 130px;
+  }
+  .skills{
+    bottom: 80px;
+  }
+}
